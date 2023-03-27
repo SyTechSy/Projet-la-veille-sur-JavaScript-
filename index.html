@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cours JavaScript</title>
+        <meta charset="utf-8">
+        <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="cours.css">
+        <script src='script.js'></script>
+    </head>
+    
+    <body>
+
+        <!-- Exercice -->
+        <!--================ a =================-->
+
+        <script>
+            nom = prompt("Entrez votre nom :");
+            alert("Bienvenue " + nom)
+        </script>
+        
+        <!--================ b =================-->
+
+        <script>
+            let nombre1 = parseInt(prompt("Entrez le premier nombre pour calculer :"));
+            let nombre2 = parseInt(prompt("Entrez le deuxième nombre pour calculer :"));
+
+            let somme = nombre1 + nombre2;
+
+            alert("La somme de " + nombre1 + " et " + nombre2 + " est égale à " + somme + ".");
+
+        </script>
+
+        <!--================ c =================-->
+
+        <script>
+            let mult = parseInt(prompt("Entrez un nombre pour la multiplication : "));
+
+            for (let i = 1; i <= 10; i++) {
+                let resultat = mult * i;
+                alert(mult + " x " + i + " = " + resultat)
+            }
+        </script>
+
+        <!--================ d =================-->
+
+        <script>
+            let racine = parseInt(prompt("Entrez un nombre pour racine carrée : "));
+
+            // Calculer la racine carrée du nombre
+
+            let racineCarree = Math.sqrt(racine);
+            alert("La racine carrée de " + " est " + racineCarree + '.');
+        </script>
+        
+        <!--================ c =================-->
+
+        <script>
+            let facto = parseInt(prompt("Entrez un nombre pour factorielle :"));
+
+            let factoriel = 1;
+            for (let i = 1; i <= facto; i++) {
+                factoriel *= i;
+            }
+
+            alert("Le factoriel de " + facto + " est " + factoriel + ".");
+        </script>
+
+    </body>
+</html>
